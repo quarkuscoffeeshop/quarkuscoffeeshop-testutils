@@ -27,7 +27,7 @@ public abstract class KafkaIT {
 
     static final Logger logger = LoggerFactory.getLogger(KafkaIT.class);
 
-    Jsonb jsonb = JsonbBuilder.create();
+    protected Jsonb jsonb = JsonbBuilder.create();
 
     protected static Collection<String> kafkaTopics = Arrays.asList("barista-in", "barista-out", "kitchen-in", "kitchen-out", "inventory", "orders", "web-in", "web-updates");
 
